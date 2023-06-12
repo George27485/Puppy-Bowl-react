@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 
-
+//Nav bar code used for project in Puppylist.jsx
 
 
 
@@ -40,7 +40,7 @@ useEffect(() => {
     const lowercasedName = singleDog.name.toLowerCase();
     const lowercasedQuery = searchQuery.toLowerCase();
 
-    return lowercasedName.includes(lowercasedQuery);
+     (lowercasedName.includes(lowercasedQuery));
   });
 
 

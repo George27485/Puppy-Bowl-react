@@ -34,8 +34,8 @@ export default function PuppyForm({ setPupInfo }) {
   }
   
   return (
-    <form onSubmit={sendNewPostReq}>
-      <label htmlFor="newPlayerName">Enter new player's name:</label>
+    <form id="pup-submit-form" onSubmit={sendNewPostReq}>
+      <label htmlFor="newPlayerName">Player's name:</label>
       <br/>
       <input
         name="newPlayerName"
@@ -47,7 +47,7 @@ export default function PuppyForm({ setPupInfo }) {
         }}
       ></input>
 
-      <label htmlFor="newPlayerBreed">Enter new player's breed:</label>
+      <label htmlFor="newPlayerBreed">Player's breed:</label>
       <br/>
       <input
         name="newPlayerBreed"
@@ -58,7 +58,7 @@ export default function PuppyForm({ setPupInfo }) {
           setNewPlayerBreed(event.target.value);
         }}
       ></input>
-<label htmlFor="newPlayerPic">Enter new player's Picture url:</label>
+<label htmlFor="newPlayerPic">Player's Picture url:</label>
       <br/>
       <input
         name="newPlayerPic"

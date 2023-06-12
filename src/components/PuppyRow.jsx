@@ -3,7 +3,8 @@ import React from "react";
 
 export default function PuppyRow({pup, setSelectedPupId}){
 return(
-    <tr
+    <div id="contain-row">
+    <tr 
     onClick={() =>{
         setSelectedPupId(pup.id);
     }}
@@ -19,6 +20,7 @@ return(
             <td># {pup.id}</td>
             </div>
     </tr>
+    </div>
 );
 }
 

@@ -1,3 +1,4 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -41,25 +42,95 @@
   color: #888;
 }
 
+
+
+
+
 #puppy-image{
   width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 6px solid white;
+    border: 6px solid black;
+  
 }
 
+#puppy-image2{
+  width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 6px solid white;
+    display: flex;
+    
+}
+
+#pup-card{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
 #the-Rows{
-  display:flex;
+  display: flex;
   flex-direction: column;
-  align-content: center;
- flex-wrap: wrap;
   border: 7px solid black;
+  background-image: url(pbrc.jpg);
+  background-size: cover;
 }
 
 #search-bar-form{
   display: flex;
-  justify-content:end;
+  justify-content:left;
+   
 
+}
+
+#Delete-form{
+  display:flex;
+  justify-content: center;
+   
+}
+
+#pup-submit-form{
+ display: flex;
+ justify-content: center;
+ flex-direction: row;
+ flex-wrap: wrap;
+ 
+}
+
+
+#selected-pup{
+  display: flex;
+  justify-content: center;
+  
+  
+ 
+}
+
+#pb-title{
+  font-size: 200%;
+  display: flex;
+  
+}
+
+#contain-row{
+  display: flex;
+  
+  justify-content: center;
+  padding:5%;
+  
+}
+
+body{
+  background-image: url(pbr.jpg);
+  background-size:cover;
+  
+  color:black;
+  margin:0;
+  padding:0;
 }

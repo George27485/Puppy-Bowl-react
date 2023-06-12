@@ -7,7 +7,7 @@ import PuppyRow from "./PuppyRow";
 export default function PuppyList({setSelectedPupId}){
     const[pupInfo, setPupInfo] = useState([]);
    
- //test
+ //test containers for seaarch bar
  const [searchQuery, setSearchQuery] = useState("")
  //end test
     useEffect(() =>{
@@ -24,7 +24,7 @@ export default function PuppyList({setSelectedPupId}){
         }
         fetchPup();
     }, [])
-//test code
+//test code for search bar
 
 
 const filteredPuppies = pupInfo.filter((pup) =>
@@ -45,22 +45,22 @@ setSelectedPupId(puppyId);
         
 <div>
 <form id="search-bar-form">
-        <label htmlFor="search-query">Search By Name Here: </label>
+        <label htmlFor="search-query">Search: </label>
         <input
           name="search-query"
           type="text"
-          placeholder="Type here"
+          placeholder="Type Name Here"
           value={searchQuery}
           onChange={(event) => setSearchQuery(event.target.value)}
         />
       </form>
 
 
-
+<div id= "pup-card">
         <table>
             <thead>
                 <tr>
-                    <th colSpan = "3">Puppy Bowl Contestants</th>
+                    <th id="pb-title" colSpan = "3">Puppy Bowl Contestants</th>
                 </tr>
             </thead>
             <tbody>
@@ -73,6 +73,7 @@ setSelectedPupId(puppyId);
                 
                     
                 </tr>
+                
                 { filteredPuppies.map((pup) =>(
                      <PuppyRow key={pup.id} pup={pup} setSelectedPupId={setSelectedPupId} setPupInfo ={setPupInfo} 
                     onClick={() => handlePuppyClick(pup)} />
@@ -83,6 +84,7 @@ setSelectedPupId(puppyId);
                 
             </tbody>
         </table>
+        </div>
        
         </div>
         

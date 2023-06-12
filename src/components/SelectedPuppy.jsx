@@ -29,42 +29,39 @@ export default function SelectedPuppy({selectedPuppyId, setSelectedPupId}){
           {pupInfo ? (
             <div>
               <h2>Puppy Details</h2>
-              <table>
+              <table id= "selected-pup">
                 <tbody>
 
                 <tr>
                   <td>
             <img
              src = {pupInfo.imageUrl}
-             id = "puppy-image"
+             id = "puppy-image2"
              />
             </td>
             </tr>
+            
+
                   <tr>
-                    <td>Name:</td>
-                    <td>{pupInfo.name}</td>
+                    <td>Name:   {pupInfo.name}</td>
                   </tr>
                  <tr>
-                    <td>ID:</td>
-                    <td>{pupInfo.id}</td>
+                    <td>ID:   {pupInfo.id}</td>
                  </tr>
                   <tr>
-                    <td>Breed:</td>
-                    <td>{pupInfo.breed}</td>
+                    <td>Breed:   {pupInfo.breed}</td>
+                    
                   </tr>
                   <tr>
-                    <td>Status:</td>
-                    <td>{pupInfo.status}</td>
+                    <td>Status:   {pupInfo.status}</td>
                   </tr>
-                  <tr>
-                    <td>Cohort</td>
-                    <td>{pupInfo.cohort}</td>
-                  </tr>
+                 
                 </tbody>
               </table>
               <button onClick={() => setSelectedPupId(null)}>Go Back</button>
             </div>
           ) : null}
+          
         </div>
       );
     }

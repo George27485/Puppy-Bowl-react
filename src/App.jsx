@@ -4,7 +4,8 @@ import './App.css'
 import SelectedPuppy from './components/selectedPuppy';
 import PuppyForm from './components/PuppyForm';
 import DeleteForm from './components/DeleteForm';
-
+import '/public/pbr.jpg';
+import '/public/pbrc.jpg';
 
 
 function App() {

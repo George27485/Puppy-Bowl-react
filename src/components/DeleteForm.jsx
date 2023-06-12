@@ -19,7 +19,7 @@ export default function DeleteForm({ setPupInfo }) {
   }
 
   return (
-    <div id="Delete-Button">
+    <div id="Delete-form">
       <input
         type="text"
         placeholder="Enter player ID"
