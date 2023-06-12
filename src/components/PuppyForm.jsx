@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 
 export default function PuppyForm({ setPupInfo }) {
-  const [newPlayerName, setNewPlayerName] = useState(" ");
-  const [newPlayerBreed, setNewPlayerBreed] = useState(" ");
+  const [newPlayerName, setNewPlayerName] = useState("");
+  const [newPlayerBreed, setNewPlayerBreed] = useState("");
   const [newPlayerPic, setNewPlayerPic] = useState(" ");
 
   async function sendNewPostReq(event) {
@@ -40,7 +40,7 @@ export default function PuppyForm({ setPupInfo }) {
       <input
         name="newPlayerName"
         type="text"
-        placeholder="New player's name goes here"
+        placeholder="New Player's Name "
         value={newPlayerName}
         onChange={(event) => {
           setNewPlayerName(event.target.value);
@@ -52,7 +52,7 @@ export default function PuppyForm({ setPupInfo }) {
       <input
         name="newPlayerBreed"
         type="text"
-        placeholder="New player's breed goes here"
+        placeholder="New Player's breed"
         value={newPlayerBreed}
         onChange={(event) => {
           setNewPlayerBreed(event.target.value);
@@ -63,7 +63,7 @@ export default function PuppyForm({ setPupInfo }) {
       <input
         name="newPlayerPic"
         type="url"
-        placeholder="New player's picture goes here"
+        placeholder="picture url"
         value={newPlayerPic}
         onChange={(event) => {
           setNewPlayerPic(event.target.value);
