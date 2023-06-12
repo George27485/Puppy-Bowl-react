@@ -31,7 +31,7 @@ const filteredPuppies = pupInfo.filter((pup) =>
 pup.name.toLowerCase().includes(searchQuery.toLowerCase())
 );
 
-const handlePuppyClick = () => {
+const PupDetailClick = () => {
 setSelectedPupId(puppyId);
 };
 
@@ -76,7 +76,7 @@ setSelectedPupId(puppyId);
                 
                 { filteredPuppies.map((pup) =>(
                      <PuppyRow key={pup.id} pup={pup} setSelectedPupId={setSelectedPupId} setPupInfo ={setPupInfo} 
-                    onClick={() => handlePuppyClick(pup)} />
+                    onClick={() => PupDetailClick(pup)} />
                 ))}
                 
                 
