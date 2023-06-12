@@ -78,7 +78,7 @@
   display: flex;
   flex-direction: column;
   border: 7px solid black;
-  background-image: url(pbrc.jpg);
+  background-image: url(/images/pbrc.jpg);
   background-size: cover;
 }
 
@@ -128,7 +128,7 @@
 }
 
 body{
-  background-image: url(pbr.jpg);
+  background-image: url(/images/pbr.jpg);
   background-size:cover;
   
   color:black;
